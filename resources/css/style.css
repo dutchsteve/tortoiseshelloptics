@@ -1,0 +1,23 @@
+/* Universal Styles */
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: Helvetica;
+  line-height: 1.4;
+}
+
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Company Header  */
+
+nav {
+  background-color: black;
+  color: white;
+}
