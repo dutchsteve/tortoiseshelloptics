@@ -18,6 +18,29 @@ body {
 /* Company Header  */
 
 nav {
-  background-color: black;
+  background-color: cadetblue;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+nav div {
+  display: flex;
+  align-items: center
+}
+
+nav img {
+height: 1.5rem;
+padding: 0 1rem 0 2rem;
+}
+
+nav .Menu{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+ ul li {
+    display: inline;
+    padding: 0 2rem;
 }
