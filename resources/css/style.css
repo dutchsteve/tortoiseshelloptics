@@ -9,13 +9,31 @@ body {
   line-height: 1.4;
 }
 
-
 .container {
   max-width: 960px;
   margin: 0 auto;
 }
 
+.flex {
+  display: flex;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2
+}
+
 /* Company Header  */
+
+header {
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png);
+  height: 30rem;
+  padding-top: 1rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 nav {
   background-color: cadetblue;
@@ -32,15 +50,200 @@ nav div {
 }
 
 nav img {
-height: 1.5rem;
-padding: 0 1rem 0 2rem;
+  height: 1.5rem;
+  padding: 0 1rem 0 2rem;
 }
 
-nav .Menu{
+nav .menu {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
- ul li {
-    display: inline;
-    padding: 0 2rem;
+
+nav .mobile-menu {
+display: none;
+}
+
+ul li {
+  display: inline;
+  padding: 0 2rem;
+}
+
+/* main banner  */
+
+
+header .flex {
+  justify-content: flex-end;
+}
+
+header .quote {
+display: inline-block;
+padding: 1.5rem 5rem;
+margin-top: 10rem;
+margin-right: -2rem;
+background-color: white;
+}
+
+/* buying and company info */
+
+.steps, .discription{
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0;
+}
+
+.process {
+  height: 8rem;
+  margin: 0 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.process figcaption {
+  display: block;
+  text-align: center;
+}
+
+#exam {
+  width: 3.5rem;
+}
+
+#fittings, #delivery {
+  width: 5rem;
+}
+
+.info {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 5% 5rem 5%;
+}
+
+.title {
+  background-color: cadetblue;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 0 0.5rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+/* footer  */
+
+#footer {
+  background-color: azure;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+footer span {
+    display: block;
+}
+
+footer img {
+  height: 1.5rem;
+  padding: 4rem 1rem 4rem 4rem;
+}
+
+/* media queries  */
+
+@media only screen and (max-width: 960px)
+{
+
+  header {
+    padding-top: 0;
+    height: 22rem;
+  }
+
+  header .quote {
+  padding: 0.75rem 4rem;
+  margin-top: 5rem;
+  margin-right: 2rem;
+  background-color: white;
+  }
+
+  h1 {
+    font-size: 1.33rem;
+  }
+}
+
+/* mobile devices  */
+
+@media only screen and (max-width:724px)
+{
+
+  nav .menu {
+    display: none;
+  }
+
+  nav .mobile-menu{
+    display: block;
+  }
+
+  header {
+    padding-top: 0;
+    height: 17rem;
+  }
+
+  header .quote {
+  padding: 1rem 0;
+  margin-top: 9rem;
+  width: 100%;
+  margin-right: 0;
+  background-color: white;
+  text-align: center;
+  }
+
+  h1 {
+    font-size: 1.33rem;
+  }
+
+  .steps, .discription{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    flex-direction: column;
+    font-size: 0.77rem;
+    margin: 0;
+    font-weight: normal;
+}
+
+.process {
+  height: 8rem;
+  margin: 0 1.54rem;
+  display: flex;
+  padding: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+    text-align: center;
+}
+
+.info {
+  width: 100%;
+  padding: 1rem 0;
+  margin: 1rem 0;
+}
+
+.info span {
+  padding: 1rem;
+}
+footer span {
+  display: none;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+footer img {
+  padding: 4rem;
+}
+
 }
